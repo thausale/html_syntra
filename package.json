@@ -1,0 +1,11 @@
+{
+  "name": "html_syntra",
+  "version": "1.0.0",
+  "description": "oefeningen voor html-css 2022 Syntra van Niels",
+  "main": "index.js",
+  "scripts": {
+    "surge":"surge  C:\\Syntra\\HTML_Syntra\\ niels-html-css-syntra-2023.surge.sh"
+  },
+  "author": "Niels Cnops",
+  "license": "ISC"
+}

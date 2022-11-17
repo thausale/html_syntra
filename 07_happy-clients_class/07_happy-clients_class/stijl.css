@@ -1,0 +1,141 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+    font-size: 100%;
+    /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* hier komt jouw css */
+
+
+
+@font-face {
+
+    font-family: Lato;
+    src: url(media/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fasthand;
+    src: url(media/fonts/Fasthand-Regular.ttf);
+}
+
+@font-face {
+    font-family: customFont;
+    src: url(media/fonts/BAUHS93.TTF);
+}
+
+body {
+    font-family: Lato;
+}
+
+body h1 {
+    font-family: Fasthand;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f38181;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav img {
+    height: 4rem
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+main {
+    padding: 0 5vw;
+    background-image: url(media/images/berg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 5rem;
+
+}
+
+main article {
+
+    width: 520px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+main article div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
+
+main article img {
+    border-radius: 100%;
+    width: 110px;
+    margin-bottom: 50px;
+}
+
+h2,
+h4 {
+    /* zodat ons pseude element absoulte effect kan hebben*/
+    position: relative;
+}
+
+
+header h2::after,
+article div h4::after {
+    content: "";
+    background-color: #f38181;
+    height: 3px;
+    position: absolute;
+    top: 21px;
+    width: 60px
+}
+
+h4::after {
+    left: 0;
+    width: 30px
+}
+
+
+
+header h2::after {
+    left: calc(100% - (50% + 30px));
+    width: 60px
+}

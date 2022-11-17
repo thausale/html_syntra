@@ -1,0 +1,96 @@
+button {
+
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 140px;
+    height: 45px;
+    margin-left: 10%;
+    margin-top: 20px;
+
+}
+
+span {
+    color: blue;
+    text-decoration: underline;
+}
+
+body {
+    max-width: auto;
+    background-color: black;
+}
+
+h1 {
+    font-size: 44px;
+    margin-left: 10%;
+
+
+}
+
+h2 {
+    font-size: 28px;
+    ;
+    margin-left: 10%;
+
+}
+
+p {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 20px
+}
+
+
+
+
+
+.responsive {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 500px;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 87px min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Header Header"
+        "Nav Nav"
+        "Text Pictures";
+    margin: -8px;
+    max-height: max-content;
+}
+
+.header {
+    grid-area: Header;
+    background-color: #c8b8ff;
+    text-align: center;
+}
+
+.nav {
+    justify-self: auto;
+    grid-area: Nav;
+    text-align: end;
+    background-color: white;
+    align-self: center;
+    padding: 35px;
+    justify-content: space-between;
+}
+
+.text {
+    grid-area: Text;
+    background-color: #699bf7;
+    padding-bottom: 27.5vmax;
+}
+
+.pictures {
+    grid-area: Pictures;
+    background-color: #699bf7;
+    margin-left: -1px;
+
+}

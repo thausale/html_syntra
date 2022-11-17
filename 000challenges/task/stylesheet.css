@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+
+  width: fit-content;
+  display: inline-block;
+}
+
+h2 {
+  color: cadetblue;
+  margin-bottom: -10px;
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 190px 400px 190px;
+  grid-template-rows: 40px 57px 40px 107px 60px 37px 107px 30px 67px 2.3fr;
+  gap: 6px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Artikelfoto- artikel Opvallend"
+    "Artikelfoto- artikel Foto2"
+    ". artikel Foto2"
+    "Foto3 art2 art3"
+    ". art2 foto4"
+    ". . foto4"
+    "Foto5 art4 art5"
+    ". art4 foto6"
+    ". . foto6"
+    ". . art6";
+}
+
+.Opvallend {
+  grid-area: Opvallend;
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  font-size: xx-large;
+}
+
+
+
+.Artikelfoto- {
+  grid-area: Artikelfoto-;
+  background-color: grey;
+  border-radius: 3px;
+
+  text-align: center;
+  line-height: 107px;
+}
+
+.artikel {
+  grid-area: artikel;
+}
+
+.Foto2 {
+  grid-area: Foto2;
+  background-color: grey;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 107px;
+}
+
+.art3 {
+  grid-area: art3;
+}
+
+.Foto3 {
+  grid-area: Foto3;
+  background-color: grey;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 107px;
+}
+
+.art2 {
+  grid-area: art2;
+}
+
+.foto4 {
+  grid-area: foto4;
+  background-color: grey;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 107px;
+}
+
+.Foto5 {
+  grid-area: Foto5;
+  background-color: grey;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 107px;
+}
+
+.art4 {
+  grid-area: art4;
+}
+
+.art5 {
+  grid-area: art5;
+}
+
+.foto6 {
+  grid-area: foto6;
+  background-color: grey;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 107px;
+}
+
+.art6 {
+  grid-area: art6;
+}

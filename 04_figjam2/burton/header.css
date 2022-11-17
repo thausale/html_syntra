@@ -1,0 +1,46 @@
+body {
+    background-image: url("./Images/berg.png");
+
+}
+
+header {
+    grid-area: header;
+    background-color: #f38181;
+    height: 110px;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+header nav ul {
+    display: flex;
+    font-size: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f38181;
+
+
+}
+
+header ul li {
+    padding-right: 30px;
+    color: white;
+    padding-top: 50px;
+
+}
+
+header ul li:hover {
+    text-decoration: underline;
+    color: #fce38a;
+    background-color: #f38181;
+}
+
+nav img {
+    max-height: 80px;
+    margin-top: 10px;
+}

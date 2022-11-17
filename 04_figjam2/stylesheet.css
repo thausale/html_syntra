@@ -1,0 +1,154 @@
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "artike foto";
+} */
+
+/* drie basisstijlregels om je te helpen */
+:root {
+    font-size: 62.5%;
+    /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+
+:root {
+    font-size: 62.5%;
+    /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+
+/* 1rem = 10px
+ 1.4 = 14px
+*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+section {
+    line-height: 25px;
+}
+
+
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: #c8b8ff;
+    padding-top: 20px;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+body {
+
+    background-color: #699bf7;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+nav {
+
+    background-color: white;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    padding: 34px;
+    padding-top: 39px;
+    cursor: crosshair;
+}
+
+nav ul li:hover {
+    background-color: black;
+    color: white;
+
+}
+
+span {
+    color: blue;
+    text-decoration: underline;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    padding: 62px 11vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 400px;
+}
+
+figure {
+    display: flex;
+    padding-right: 11%;
+}
+
+article button {
+
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: fit-content;
+    height: 47px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+article button:hover {
+    opacity: 70%;
+    color: green;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.artike {
+    grid-area: artike;
+}
+
+.foto {
+    grid-area: foto;
+}

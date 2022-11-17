@@ -1,0 +1,156 @@
+header {
+    background-image: url(images/background.jpg);
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url(fonts/Raleway/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url(fonts/Raleway/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Semibold;
+    src: url(fonts/Raleway/Raleway-SemiBold.ttf);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+nav img {
+    padding: 0 0.5vw
+}
+
+nav>p {
+    margin-right: 4vw;
+    font-size: 34px;
+    font-family: Raleway-Regular;
+
+
+}
+
+nav>div {
+    font-family: Montserrat-Light
+}
+
+nav>div:hover {
+    color: #998675;
+    cursor: pointer;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header div h2 {
+    font-size: 19px;
+    padding-top: 320px;
+    padding-bottom: 2vw;
+    font-family: raleway-medium;
+}
+
+header div h1 {
+    font-size: 30px;
+    padding-bottom: 2vw;
+    font-family: raleway-ExtraBold;
+}
+
+header button {
+    background-color: #998675;
+    margin-bottom: 320px;
+    padding: 15px 35px;
+    border-radius: 5%;
+    border: none;
+    border-bottom: 3px solid #736357;
+    margin-top: 55px;
+    font-family: raleway-extrabold;
+    color: white;
+}
+
+article {
+    display: flex;
+    gap: 15px;
+}
+
+article div {
+    width: 8px;
+    height: 8px;
+    background-color: grey;
+    border-radius: 100%;
+    margin-bottom: 40px;
+}
+
+.activeCircle {
+    border: 2px solid #998675;
+    background: none;
+}
+
+
+main {
+    display: grid;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 85px;
+}
+
+main div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #736357;
+    gap: 1vw;
+    max-width: 270px;
+}
+
+main div h3 {
+    font-size: 22px;
+    font-family: raleway-semibold;
+}
+
+main div p {
+    font-family: montserrat-light;
+    color: #998675;
+}
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        grid-template-columns: repeat(3, max-content);
+    }
+}
+
+@media (min-width:1200px) {
+    main {
+        grid-template-columns: repeat(4, max-content);
+    }
+}

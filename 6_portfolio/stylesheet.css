@@ -73,12 +73,14 @@ header div article {
     justify-content: space-between;
     column-gap: 1vw;
     padding-bottom: 1rem;
+    height: min-content;
+    width: min-content;
 }
 
 header div article img {
     border: solid 1px grey;
     border-radius: 50%;
-    height: 40px;
+    padding: 2px 8px;
 }
 
 header div article h3 {

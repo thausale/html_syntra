@@ -1,0 +1,156 @@
+body {
+    /* padding: 10px; */
+    display: grid;
+    grid-template-rows: auto minmax(1fr, 630px) 30px;
+}
+
+
+
+
+
+
+
+
+
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: space-around;
+    padding: 20px;
+    border: solid black 1px;
+    column-gap: 10px;
+    row-gap: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding-top: 100px;
+    border: solid 1px black;
+    color: white;
+    padding-left: 5vw;
+    column-gap: 15vw;
+    background-image: url(xit-bg.png);
+    flex-grow: 1;
+    background-position: center center;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    position: relative;
+}
+
+p {
+    color: lightgrey;
+}
+
+section button {
+    background: none;
+    color: white;
+    border: white solid 2px;
+    width: 135px;
+    height: 40px;
+}
+
+section {
+    display: grid;
+    max-width: 40vw;
+    grid-template-rows: repeat(4, min-content);
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+
+.logo {
+    color: orange;
+}
+
+.logo::first-letter {
+
+    font-weight: bolder;
+    color: white;
+}
+
+.biggerFont {
+    font-size: 35px;
+}
+
+.pseudo::after {
+    content: "";
+    background: white;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 1px;
+    width: 50px;
+}
+
+
+/* FORM STYLING */
+
+form {
+    display: grid;
+    grid-template-columns: 360px;
+    background-color: white;
+    width: 360px;
+    height: 360px;
+    row-gap: 10px;
+    color: black;
+    margin-bottom: 50px;
+    border-radius: 1%;
+    margin-right: 20px;
+}
+
+form h3 {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 30px;
+    align-self: center;
+}
+
+form input {
+    background: none;
+    margin: 0 30px;
+    border: none;
+    border-bottom: solid 1px grey;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: grey solid 2px;
+
+}
+
+form button {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 2%;
+}
+
+.interactible:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 750px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

@@ -126,7 +126,16 @@ ul li:hover {
     border: 1px solid white;
 }
 
+body div>div img {
+    width: 100%;
+    transition: scale 0.1s ease;
+}
 
+.container div img:hover {
+    opacity: 90%;
+    scale: 1.15;
+    filter: contrast(50%);
+}
 
 .buttons {
     border: 1px solid;
@@ -139,6 +148,7 @@ ul li:hover {
     gap: 1rem;
     justify-content: center;
 }
+
 
 @media (min-width: 600px) {
     .container {
@@ -162,9 +172,4 @@ ul li:hover {
     .container {
         grid-template-columns: repeat(5, max-content);
     }
-}
-
-
-.container div:hover {
-    opacity: 50%;
 }

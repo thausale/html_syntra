@@ -1,9 +1,4 @@
-header {
-    background-image: url(images/background.jpg);
-    color: #fff;
-    background-repeat: no-repeat;
-}
-
+/* IMPORTING FONTS */
 @font-face {
     font-family: Montserrat-Light;
     src: url(fonts/Montserrat/Montserrat-Light.ttf);
@@ -27,6 +22,14 @@ header {
 @font-face {
     font-family: Raleway-Semibold;
     src: url(fonts/Raleway/Raleway-SemiBold.ttf);
+}
+
+/* FIXING HEADER STYLES*/
+
+header {
+    background-image: url(images/background.jpg);
+    color: #fff;
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -78,6 +81,11 @@ header div h1 {
     font-family: raleway-ExtraBold;
 }
 
+header div p {
+    max-width: 570px;
+    text-align: center;
+}
+
 header button {
     background-color: #998675;
     margin-bottom: 300px;
@@ -90,6 +98,8 @@ header button {
     color: white;
 }
 
+
+/* Using the article to put the dots under the picture in*/
 article {
     display: flex;
     gap: 15px;
@@ -108,7 +118,7 @@ article div {
     background: none;
 }
 
-
+/* This section is for everything under the picture*/
 main {
     display: grid;
     gap: 1vw;
@@ -138,6 +148,7 @@ main div p {
     color: #998675;
 }
 
+/* these annoying things are for the pseudo elements*/
 .annoying {
     position: relative;
     margin-bottom: 50px;
@@ -168,10 +179,56 @@ main div p {
     width: 30%;
 }
 
+/* PLACING THE ARROW ELEMENTS ON THE LEFT AND RIGHT, 
+BELOW I USE MEDIA QUERIES TO MAKE IT RESPONSIVE AND MOVE OUT OF THE WAY FOR TEXT
+*/
+.main {
+    position: relative;
+}
+
+.arrowLeft {
+    position: absolute;
+    left: 10vw;
+    top: 45%;
+}
+
+.arrowRight {
+    position: absolute;
+    right: 10vw;
+    top: 45%;
+}
+
+/* MEDIA QUERIES TO MAKE GRID AND ARROWS RESPONSIVE */
+@media (min-width: 300px) {
+    .arrowLeft {
+        position: absolute;
+        left: 10vw;
+        top: 50%;
+    }
+
+    .arrowRight {
+        position: absolute;
+        right: 10vw;
+        top: 50%;
+    }
+
+}
 
 @media (min-width: 600px) {
     main {
         grid-template-columns: repeat(2, max-content);
+    }
+
+    .arrowLeft {
+        position: absolute;
+        left: 10vw;
+        top: 50%;
+    }
+
+    .arrowRight {
+        position: absolute;
+        right: 10vw;
+        top: 50%;
     }
 }
 
@@ -185,9 +242,13 @@ main div p {
     main {
         grid-template-columns: repeat(4, max-content);
     }
+
 }
 
 .interactable:hover {
 
     cursor: pointer;
 }
+
+/* Using position absolute to position the arrows on 
+the left and right of the main */
